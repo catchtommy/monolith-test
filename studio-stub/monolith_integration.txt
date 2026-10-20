@@ -1,0 +1,1 @@
+Monolith integration for customer/create-customer (stub agent, attempt 1)
