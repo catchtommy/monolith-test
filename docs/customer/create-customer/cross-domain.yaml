@@ -1,0 +1,16 @@
+# [stub] sample cross-domain catalogue
+interactions:
+  - id: X1
+    direction: outbound
+    target: auditing
+    kind: query
+    summary: Reads a auditing summary while handling create-customer
+    code_refs: []
+    consistency: immediate
+  - id: X2
+    direction: inbound
+    target: auditing
+    kind: side-effect
+    summary: auditing reacts after create-customer completes
+    code_refs: []
+    consistency: eventual
