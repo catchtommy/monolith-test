@@ -1,0 +1,20 @@
+# [stub] sample domain dependencies
+feature: create-broker
+domain: broker
+decision:
+  scope: cross-domain
+  reason: "[stub] Reads a auditing summary while handling create-broker"
+dependencies:
+  - domain: auditing
+    relation: calls
+    direction: outbound
+    strength: hard
+    interactions: [X1]
+    touchpoints:
+      - kind: service
+        ref: com.acme.auditing.AuditingService#getAuditingSummary
+        owner: auditing
+        used_for: Reads a auditing summary while handling create-broker
+        code_refs: []
+considered_unrelated: []
+shared_code: []
