@@ -25,6 +25,3 @@ Domains it is listed as calling: `auditing`
 ### Entry points and files for this operation
 - BrokerController.create
 - /broker/create-broker.do
-
-## Reviewer feedback addressed
-asdasd
